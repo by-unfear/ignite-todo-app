@@ -61,13 +61,13 @@
 	background-color: var(--gray-400);
 	padding: 2px 8px;
 }
-.main .empty{
+.main .empty {
 	text-align: center;
-	padding:4rem 0;
+	padding: 4rem 0;
 }
-.main .empty p{
+.main .empty p {
 	margin: 0.5rem 0;
-	color:var(--gray-300)
+	color: var(--gray-300);
 }
 .main .todo {
 	border-radius: 8px;
@@ -80,11 +80,11 @@
 	align-items: flex-start;
 	margin-bottom: 1rem;
 }
-.main .todo .done{
+.main .todo .done {
 	color: var(--gray-300);
 	text-decoration: line-through;
 }
-.main button{
+.main button {
 	background: none;
 	border: none;
 	outline: none;
@@ -113,4 +113,24 @@
 .delete:hover {
 	color: var(--red);
 	background-color: var(--gray-400);
+}
+@media only screen and (max-width: 900px) {
+	.main {
+		width: 35rem;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.main {
+		width: 30rem;
+	}
+}
+@media only screen and (max-width: 540px) {
+	.main {
+		width: 25rem;
+	}
+}
+@media only screen and (max-width: 425px) {
+	.main {
+		width: 15rem;
+	}
 }
