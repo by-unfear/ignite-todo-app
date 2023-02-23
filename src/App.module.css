@@ -1,0 +1,116 @@
+.header {
+	background-color: var(--gray-700);
+	display: flex;
+	justify-content: center;
+	padding: 2rem 0 4rem;
+}
+.header img {
+	height: 3rem;
+}
+.main {
+	width: 52rem;
+	margin: 0 auto;
+}
+.main form {
+	display: grid;
+	grid-template-columns: 1fr 7rem;
+	gap: 4px;
+	position: relative;
+	margin-top: calc(0px - 1.5rem - 4px);
+}
+.main form input {
+	padding: 16px;
+	border-radius: 8px;
+	background-color: var(--gray-500);
+	border: solid 1px var(--gray-700);
+	font-size: 1rem;
+	font-weight: 700;
+	color: var(--gray-300);
+}
+.main form button {
+	padding: 16px;
+	border-radius: 8px;
+	background-color: var(--blue-dark);
+	border: solid 1px var(--gray-700);
+	font-size: 1rem;
+	font-weight: 700;
+	color: var(--gray-100);
+	font-weight: bold;
+	display: block;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+.main form button:hover {
+	background-color: var(--blue);
+	cursor: pointer;
+}
+.main .status {
+	font-weight: 700;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4.5rem;
+	margin-bottom: 1rem;
+}
+.main .status span {
+	color: var(--gray-100);
+	font-size: 0.8rem;
+	border-radius: 999px;
+	background-color: var(--gray-400);
+	padding: 2px 8px;
+}
+.main .empty{
+	text-align: center;
+	padding:4rem 0;
+}
+.main .empty p{
+	margin: 0.5rem 0;
+	color:var(--gray-300)
+}
+.main .todo {
+	border-radius: 8px;
+	padding: 1.2rem;
+	background-color: var(--gray-500);
+	border: solid 1px var(--gray-400);
+	display: grid;
+	grid-template-columns: 1rem 1fr 1rem;
+	gap: 1rem;
+	align-items: flex-start;
+	margin-bottom: 1rem;
+}
+.main .todo .done{
+	color: var(--gray-300);
+	text-decoration: line-through;
+}
+.main button{
+	background: none;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	cursor: pointer;
+}
+.uncheck {
+	color: var(--blue);
+}
+.check {
+	color: var(--purple-dark);
+}
+.check:hover {
+	color: var(--purple);
+}
+.uncheck:hover {
+	color: var(--blue-dark);
+}
+.delete {
+	width: 24px;
+	height: 24px;
+	border-radius: 4px;
+	padding: 0px 4px;
+	color: var(--red);
+}
+.delete:hover {
+	color: var(--red);
+	background-color: var(--gray-400);
+}
